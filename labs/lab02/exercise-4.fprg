@@ -4,12 +4,21 @@
         <attribute name="name" value="exercise-4"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-07-01 11:16:08 AM"/>
+        <attribute name="saved" value="2026-07-01 11:34:41 AM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMToxNTo0OSBBTTsyNzM5"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMToxNjowOCBBTTsxOzI4NDM="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMTozNDo0MSBBTTsyOzI4NDE="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
-        <body/>
+        <body>
+            <declare name="KM" type="Real" array="False" size=""/>
+            <declare name="petrol" type="Real" array="False" size=""/>
+            <declare name="petrolcost" type="Real" array="False" size=""/>
+            <declare name="petrolmoney" type="Real" array="False" size=""/>
+            <assign variable="petrolcost" expression="2.05"/>
+            <input variable="KM"/>
+            <assign variable="petrolmoney" expression="(KM/8)*petrolcost"/>
+            <output expression="petrolmoney" newline="True"/>
+        </body>
     </function>
 </flowgorithm>
