@@ -4,18 +4,18 @@
         <attribute name="name" value="exercise-2"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-06-25 03:27:31 PM"/>
+        <attribute name="saved" value="2026-07-01 11:14:32 AM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMjo0NDowMSBQTTsyNzQ5"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMzoyNzozMSBQTTsyOzI4NjM="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMToxNDozMiBBTTszOzI4NDA="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="timberPrice" type="Real" array="False" size=""/>
-            <declare name="timberLength" type="Real" array="False" size=""/>
-            <declare name="extraTimber" type="Real" array="False" size=""/>
-            <declare name="totalLength" type="Real" array="False" size=""/>
-            <declare name="totalPrice" type="Real" array="False" size=""/>
+            <declare name="timberPrice" type="Integer" array="False" size=""/>
+            <declare name="timberLengthMetre" type="Integer" array="False" size=""/>
+            <declare name="extraTimber" type="Integer" array="False" size=""/>
+            <declare name="timbertotalLength" type="Integer" array="False" size=""/>
+            <declare name="totalPrice" type="Integer" array="False" size=""/>
             <assign variable="extraTimber" expression="0.1"/>
             <output expression="&quot;Enter price per metre (RM):&quot;" newline="True"/>
             <input variable="timberPrice"/>
