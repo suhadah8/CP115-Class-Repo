@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-4"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-08 12:27:14 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMjswMjozNDoyOCBQTTsyNzUz"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wODsxMjoyNzoxNCBQTTszOzI4Njc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pages" type="Integer" array="False" size=""/>
+            <declare name="servicecharge" type="Integer" array="False" size=""/>
+            <declare name="pagecost" type="Real" array="False" size=""/>
+            <declare name="totalpayment" type="Real" array="False" size=""/>
+            <assign variable="servicecharge" expression="3"/>
+            <assign variable="pagecost" expression="0.20"/>
+            <input variable="pages"/>
+            <assign variable="totalpayment" expression="(pages*pagecost)+servicecharge"/>
+            <output expression="totalpayment" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
