@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-4-4"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-15 12:34:40 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0xNTsxMjoyNTozOCBQTTsyNzU5"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0xNTsxMjozNDo0MCBQTTsyOzI4NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="weight" type="Integer" array="False" size=""/>
+            <declare name="ticketprice" type="Integer" array="False" size=""/>
+            <input variable="weight"/>
+            <input variable="ticketprice"/>
+            <declare name="bagcharge" type="Integer" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <if expression="weight=0">
+                <then>
+                    <assign variable="total" expression="ticketprice-10"/>
+                </then>
+                <else>
+                    <if expression="weight&gt;15">
+                        <then>
+                            <assign variable="bagcharge" expression="(weight-15)*4"/>
+                            <assign variable="total" expression="ticketprice+bagcharge"/>
+                        </then>
+                        <else>
+                            <assign variable="total" expression="ticketprice"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
