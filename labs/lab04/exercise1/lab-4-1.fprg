@@ -4,33 +4,31 @@
         <attribute name="name" value="lab-4-1"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-07-15 11:22:33 AM"/>
+        <attribute name="saved" value="2026-07-15 11:30:57 AM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0xNTsxMTowOToxMCBBTTsyNzM1"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0xNTsxMToyMjozMyBBTTsxOzI4NDM="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0xNTsxMTozMDo1NyBBTTsyOzI4NDk="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="kWh" type="Integer" array="False" size=""/>
             <input variable="kWh"/>
-            <declare name="charges" type="Real" array="False" size=""/>
+            <declare name="bill" type="Real" array="False" size=""/>
             <if expression="kWh &lt;= 100">
                 <then>
-                    <assign variable="charges" expression="0.3"/>
+                    <assign variable="bill" expression="0.3*kWh"/>
                 </then>
                 <else>
                     <if expression="kWh &gt; 100 &amp;&amp; kWh &lt;= 200">
                         <then>
-                            <assign variable="charges" expression="0.5"/>
+                            <assign variable="bill" expression="(100*0.3)+((100-kWh)*0.5)"/>
                         </then>
                         <else>
-                            <assign variable="charges" expression="0.75"/>
+                            <assign variable="bill" expression="(100*0.3)+(100*0.5)+((kWh-200)*0.75)"/>
                         </else>
                     </if>
                 </else>
             </if>
-            <declare name="bill" type="Real" array="False" size=""/>
-            <assign variable="bill" expression="charges * kWh"/>
             <output expression="bill" newline="True"/>
         </body>
     </function>
