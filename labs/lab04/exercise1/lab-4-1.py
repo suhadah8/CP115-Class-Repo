@@ -1,10 +1,9 @@
 kWh = int(input())
 if kWh <= 100:
-    charges = 0.3
+    bill = 0.3 * kWh
 else:
     if kWh > 100 and kWh <= 200:
-        charges = 0.5
+        bill = 100 * 0.3 + 100 - kWh * 0.5
     else:
-        charges = 0.75
-bill = charges * kWh
+        bill = 100 * 0.3 + 100 * 0.5 + kWh - 200 * 0.75
 print(bill)
