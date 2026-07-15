@@ -4,9 +4,9 @@
         <attribute name="name" value="lab-4-1"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-07-15 11:30:57 AM"/>
+        <attribute name="saved" value="2026-07-15 11:37:37 AM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0xNTsxMTowOToxMCBBTTsyNzM1"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0xNTsxMTozMDo1NyBBTTsyOzI4NDk="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0xNTsxMTozNzozNyBBTTszOzI4NTU="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -21,7 +21,7 @@
                 <else>
                     <if expression="kWh &gt; 100 &amp;&amp; kWh &lt;= 200">
                         <then>
-                            <assign variable="bill" expression="(100*0.3)+((100-kWh)*0.5)"/>
+                            <assign variable="bill" expression="(100*0.3)+((kWh-100)*0.5)"/>
                         </then>
                         <else>
                             <assign variable="bill" expression="(100*0.3)+(100*0.5)+((kWh-200)*0.75)"/>
