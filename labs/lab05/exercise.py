@@ -32,3 +32,7 @@ age = 18
 print(f"My name is {name} and I am {age} years old.")
 print(current_date)
 print(square_root)
+
+first = int(input("First number: "))
+second = int(input("Second number: "))
+print(first + second)
